@@ -43,11 +43,10 @@ html,body{
 .navbar{
     height: 14vh;
     width: 100%;
-    background: blur;
     position: fixed;
     z-index: 10;
     display: flex;
-    gap: 22vw;
+    gap: 20vw;
     backdrop-filter: blur(10px);
 }
 
@@ -101,12 +100,66 @@ color: var(--textColor);
     color: var(--textColor);
 }
 
-/* media query for only mobile navbar */
+.navbar-mobile{
+    backdrop-filter: blur(10px);
+    
+position: absolute;
+z-index: 10;
+height: 60vh;
+width: 20vw;
+margin-left: 78.7vw;
+display: flex;
+flex-direction: column;
+transition: right 0.4s;
+
+
+}
 
 
 
+.nav-right i:nth-child(3){
+    color: orange;
+    display: none;
 
-/* end media query for only mobile navbar */
+}
+
+
+.navbar-mobile a{
+    text-decoration: none;
+    font-family: main;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-top: 5vh;
+    margin-left: 2vw;
+    color: var(--textColor);
+}
+
+.navbar-mobile a:hover{
+    color: #81e92b;
+}
+
+.navbar-mobile i{
+    color: var(--textColor);
+    font-size: 1.5vw;
+    margin-left: 16vw;
+    margin-top: 2vh;
+    cursor: pointer;
+}
+
+.navbar-mobile{
+    display: none;
+}
+
+.mobile-nav-menu i{
+    position: absolute;
+    z-index: 10;
+    color: orange;
+    font-size: 2vw;
+    margin-left: 85vw;
+    margin-top: 6vh;
+    
+}
+
 
 .page1-content{
     display: flex;
@@ -185,6 +238,8 @@ gap: 30vw;
 padding-top: 15vh;
 
 }
+
+
 
 
 .page2-left h2{
@@ -572,3 +627,209 @@ margin-top: 8vh;
 }
 
 /* end footer */
+
+
+
+/* media query for mobile */
+
+@media (max-width:420px) {
+    
+
+    .navbar{
+        height: 8vh;
+        width: 100%;
+        position: fixed;
+        z-index: 10;
+        display: flex;
+        gap: 32vw;
+        backdrop-filter: blur(10px);
+    }
+
+    .nav-left{
+
+    }
+
+.nav-left a{
+font-size: 6vw;
+top: 2vh;
+}
+
+.nav-left i{
+    font-size: 7vw;
+top: 2vh;
+    margin-left: 5vw;
+}
+
+
+.nav-right i{
+    font-size: 7vw;
+    top: 3vh;
+
+}
+
+.mobile-menu i{
+    display: block;
+    font-size: 7vw;
+    top: -1.4vh;
+    margin-left: 18vw;
+    color: var(--textColor);
+    cursor: pointer;
+}
+
+.nav-center{
+    display: none;
+}
+
+.navbar-mobile{
+    height: 100vh;
+    width: 80vw;
+    margin-left:22vw;    
+}
+
+.part2 a{
+    display: flex;
+    color: var(--textColor);
+    margin-top: 8vh;
+    position: relative;
+    top: 4vh;
+    font-size: 5vw;
+    left: 10vw;
+    
+}
+
+.part2 i{
+    font-size: 8vw;
+    margin-left: 60vw;
+    position: relative;
+    top: 5vh;
+}
+
+.page1-content{
+    flex-direction: column;
+}
+
+.page1-content-left img{
+    height: 55vh;
+    margin-left: 14vw;
+    margin-top: -3vh;
+}
+
+.page1-content-right h1{
+    margin-top: -2vh;
+    text-align: center;
+    font-size: 9vw;
+    line-height: 50px;
+}
+
+.page1-content-right p{
+    text-align: center;
+    margin-top: 1vh;
+    margin-right: 3vw;
+    margin-left: 3vw;
+    
+}
+
+.page1-btn a{
+    padding: 4vw 5vw;
+    font-size:4vw;
+    border-radius: 20px;
+}
+
+.page1-btn{
+    margin-left: 6vw;
+    margin-top: 6vh;
+}
+
+#page2{
+    flex-direction: column;
+    margin-top: -15vh;
+}
+
+.page2-left h2 {
+    font-size: 8vw;
+    text-wrap: wrap;
+    margin-left: 11vw;
+}
+
+.page2-left h2:nth-child(2){
+    margin-left: 22vw;
+}
+
+.page2-left p{
+    font-size: 4vw;
+    text-wrap: wrap;
+    margin-left: 10vw;
+    margin-right: 7vw;
+    margin-top: -1vh;
+}
+
+.page2-right{
+display: flex;    
+flex-direction: column;
+flex-wrap: wrap;
+margin-top: -20vh;
+margin-left: 10vw;
+}
+
+/*  */
+.card{
+    height: 40vh;
+    width: 60vw;
+    margin-left: -2vw;
+ 
+ 
+}
+
+
+#card1{
+margin-left: 9vw;
+margin-right: 3vw;
+margin-top: 43vh;
+}
+
+
+
+#card2{
+    margin-left:8vw;
+    margin-top: 8vh;
+}
+
+
+
+#card3{
+    margin-left: 7vw;
+    margin-top: 9vh;
+    height: 38vh;
+}
+
+.card p{
+    font-size: 5vw;
+}
+/*  */
+
+
+
+
+#page3{
+    margin-top: 90vh;
+}
+
+#page3 h3{
+    margin-top: 30vh;
+    font-size: 7vw;
+}
+
+.page3-boxes{
+    flex-direction: column;
+    
+    justify-content: flex-start;
+    gap: 0vw;
+}
+
+.box{
+    height: 30vh;
+    margin-left: 9vw;
+}
+
+}
+/* end media query for mobile */
