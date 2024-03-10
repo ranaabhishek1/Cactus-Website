@@ -424,8 +424,8 @@ height: 100vh;
 .page4-left img {
     height: 85vh;
     margin-left: 2vw;
+    margin-top: -10vh;
     filter: drop-shadow(0 0 3rem rgb(103, 138, 46));
-    margin-top: 8vh;
     cursor: pointer;
     transition: all linear 0.3s;
 }
@@ -518,7 +518,7 @@ height: 100vh;
     height: 85vh;
     margin-left: 2vw;
     filter: drop-shadow(0 0 3rem rgb(103, 138, 46));
-    margin-top: 8vh;
+    margin-top: -5vh;
     cursor: pointer;
     transition: all linear 0.3s;
 }
@@ -647,11 +647,6 @@ height: 100vh;
 
 @media (max-width:420px) {
 
-    #page1 {
-        overflow: hidden;
-        width: 100%;
-    }
-
 
 
     .navbar {
@@ -759,7 +754,7 @@ height: 100vh;
 
     #page2 {
         flex-direction: column;
-        margin-top: -15vh;
+padding-top: 5vh;        
     }
 
     .page2-left h2 {
@@ -941,7 +936,7 @@ height: 100vh;
 
 
     .page5-right img {
-        margin-top: -20vh;
+        margin-top: -40vh;
         height: 50vh;
         margin-left: 10vw;
     }
